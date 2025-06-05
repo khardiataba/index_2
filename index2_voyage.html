@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>horizon_Voyages</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Icônes Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    .hero {
+      background: url("hero.jpg") center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .destination-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧭 NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="horizon_voyage.jpeg" alt="Logo" width="20" class="me-2">
+       
+        Horizon_Voyages
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tours">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🏝️ HERO -->
+  <header class="hero" id="hero">
+    <div class="container">
+      <h1 class="display-4">Explore le monde avec nous</h1>
+      <p class="lead">Des expériences inoubliables vous attendent</p>
+       
+      <img src="horizon_voyage.jpeg" alt="Logo" width="800" class="me-2"Découvrez nos destinations>
+    </div>
+  </header>
+
+  <!-- 🌍 DESTINATIONS -->
+  <section class="py-5" id="destinations">
+    <div class="container">
+      <h2 class="text-center mb-5">Destinations populaires</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card destination-card">
+            <img src="cap skirring.jpeg" class="card-img-top" alt="Cap Skirring">
+            <div class="card-body">
+              <h5 class="card-title">Cap Skirring, Sénégal</h5>
+              <p class="card-text">Une station balnéaire paisible bordée de plages dorées et de palmiers.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card destination-card">
+            <img src="les_maldives.jpeg" class="card-img-top" alt="Maldives">
+            <div class="card-body">
+              <h5 class="card-title">Les Maldives</h5>
+              <p class="card-text">Des lagons turquoise et des villas sur l’eau dans un paradis tropical.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card destination-card">
+            <img src="paris.jpeg" class="card-img-top" alt="France">
+            <div class="card-body">
+              <h5 class="card-title">Provence, France</h5>
+              <p class="card-text">Champs de lavande, villages pittoresques et cuisine savoureuse.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧳 SERVICES -->
+  <section class="py-5 bg-light" id="tours">
+    <div class="container">
+      <h2 class="text-center mb-5">Nos services</h2>
+      <div class="accordion" id="accordionTours">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tour1">
+              Circuit Aventure au Sénégal
+              <span class="badge bg-success ms-3">850 € / 557 000 FCFA</span>
+            </button>
+          </h2>
+          <div id="tour1" class="accordion-collapse collapse show" data-bs-parent="#accordionTours">
+            <div class="accordion-body">
+              Explorez la Casamance, les marchés locaux et les villages authentiques.
+              <br><a href="#">Afficher les détails</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour2">
+              Séjour détente aux Maldives
+              <span class="badge bg-success ms-3">2 400 € / 1 572 000 FCFA</span>
+            </button>
+          </h2>
+          <div id="tour2" class="accordion-collapse collapse" data-bs-parent="#accordionTours">
+            <div class="accordion-body">
+              Farniente sur les plages, snorkeling et nuits dans une villa sur pilotis.
+              <br><a href="#">Afficher les détails</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour3">
+              Circuit culturel en Provence
+              <span class="badge bg-success ms-3">1 200 € / 786 000 FCFA</span>
+            </button>
+          </h2>
+          <div id="tour3" class="accordion-collapse collapse" data-bs-parent="#accordionTours">
+            <div class="accordion-body">
+              Visitez Avignon, Arles, les marchés de Provence et dégustez des spécialités locales.
+              <br><a href="#">Afficher les détails</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 📩 CONTACT -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2 class="text-center mb-4">Contactez-nous</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="name" placeholder="Votre nom" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Votre e-mail" required />
+        </div>
+        <div class="mb-3">
+          <label for="destination" class="form-label">Destination souhaitée</label>
+          <select class="form-select" id="destination">
+            <option>Sénégal</option>
+            <option>Maldives</option>
+            <option>France</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Votre message..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ⚓ FOOTER -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 horizon_Voyages. Tous droits réservés.</p>
+      <div>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
